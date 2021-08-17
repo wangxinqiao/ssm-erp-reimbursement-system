@@ -8,6 +8,7 @@ ssm ERP报销系统。主要分4个角色，总经理、部门经理、财务、
 其他职务没有
 
 演示视频：[ **点此查看** ](https://www.bilibili.com/video/BV1Pb4y1D7WV/)
+源码获取：[ **点此获取** ](http://www.shuyue.fun/?type=productinfo&id=202)
 
 ## 环境需要
 ````
