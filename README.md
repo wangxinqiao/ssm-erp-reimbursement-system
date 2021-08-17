@@ -1,37 +1,76 @@
 # ssm ERP报销系统
 
-#### 介绍
+## 项目介绍
 ssm ERP报销系统。主要分4个角色，总经理、部门经理、财务、普通员工，普通员工填写报销单后需要提交给部门经理审核，再由财务支付，如果金额大于5000，还需要总经理审核。
 
-#### 软件架构
-软件架构说明
+总经理拥有 部门管理 和 员工管理 功能
+部门经理拥有 员工管理 功能
+其他职务没有
+
+演示视频：点此查看
+
+## 环境需要
+1.运行环境：最好是java jdk 1.8，我们在这个平台上运行的。其他版本理论上也可以。
+2.IDE环境：IDEA，Eclipse,Myeclipse都可以。推荐IDEA;
+3.tomcat环境：Tomcat 7.x,8.x,9.x版本均可
+4.硬件环境：windows 7/8/10 1G内存以上；或者 Mac OS；
+5.是否Maven项目: 是；查看源码目录中是否包含pom.xml；若包含，则为maven项目，否则为非maven项目
+6.数据库：MySql 5.7版本；
+
+## 技术栈
+1. 后端：Spring SpringMVC MyBatis
+2. 前端：JSP+LayUI+jQuery
+
+## 主要技术
+- Spring Ioc
+- Mybatis+Spring整合
+- 声明式事务
+- Spring标签库
+- Spring拦截器
+
+## 软件架构
+三层架构
+- 持久层--Mybatis
+- 表现层--Spring MVC
+- 控制器--Spring Controller
+
+## 基于MVC模式
+- 视图--Jsp
+- 模型--JavaBean
+- 业务层--JavaBean
+
+## 使用说明
+1. 使用Navicat或者其它工具，在mysql中创建对应名称的数据库，并导入项目的sql文件；
+2. 将项目中spring-dao.xml配置文件中的数据库配置改为自己的配置
+3. 使用IDEA/Eclipse/MyEclipse导入项目，Eclipse/MyEclipse导入时，若为maven项目请选择maven;若为maven项目，导入成功后请执行maven clean;maven install命令，配置tomcat，然后运行；
+4. 运行项目，输入localhost:8080/xxx 登录
+
+## 账户说明
+系统默认用户里有四个，分别对应10001（总经理）,10002（部门经理）,10003（财务）,10004（普通员工）
+密码为000000
+员工填写报销单后需要提交给部门经理审核，再由财务支付，
+如果金额大于5000，还需要总经理审核。
+总经理拥有 部门管理 和 员工管理 功能
+部门经理拥有 员工管理 功能
+其他职务没有
+
+## 运行截图
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173525_618e5788_9599746.jpeg "报销单流程.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173538_d0be150d_9599746.jpeg "数据库表ER图.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173546_ecde0d42_9599746.jpeg "WechatIMG1743.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173553_a343d782_9599746.jpeg "WechatIMG1744.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173601_46b6d49e_9599746.jpeg "WechatIMG1745.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173610_3cb87734_9599746.jpeg "WechatIMG1746.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173617_4b28063f_9599746.jpeg "WechatIMG1747.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173627_b9fb28df_9599746.jpeg "WechatIMG1748.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173635_5757c12b_9599746.jpeg "WechatIMG1749.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173644_399884cc_9599746.jpeg "WechatIMG1750.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173652_4f78c2ad_9599746.jpeg "WechatIMG1751.jpeg")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/0817/173659_9192928f_9599746.jpeg "WX20210405-162019@2x.jpeg")
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+
